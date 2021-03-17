@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Paris Pro';
+  src: url('ParisPro-UltraExtraLight.woff2') format('woff2'),
+      url('ParisPro-UltraExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paris Pro';
+  src: url('ParisPro-LightBook.woff2') format('woff2'),
+      url('ParisPro-LightBook.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Paris Pro';
+  background: #EFEFEF;
+  /* height: 100vh !important; */
+  overflow-y: auto;
+  /* scroll-snap-type: y mandatory; */
+}
+.homepage{
+  scroll-snap-align:start;
+}
+.container-1{
+  width: 100%;
+  height: 100%;
+  /* smooth scroll */
+  /* overflow: scroll; */
+  /* overflow-y: scroll; */
+  /* scroll-behavior: smooth; */
+  scroll-snap-type: mandatory; /* for older browsers */
+  /* scroll-snap-points-y: repeat(100vh); */
+  scroll-snap-type: y mandatory;
+}
+.all-carusals{
+  width: 100%;
+  /* height: 100vh; */
+  /* scroll-snap-align:start; */
+  /* overflow: hidden; */
+}
+
+
+
+/* scroll */
+.home{
+  scroll-snap-align:start;
+}
+.about{
+  scroll-snap-align:start;
+}
+.project{
+  scroll-snap-align:start;
+}
+.contact{
+  scroll-snap-align:start;
+}
+.specility{
+  scroll-snap-align:start;
+}
+.magzine{
+  scroll-snap-align:start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a,a:hover{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+/* style on scroll */
+.side-bar-left.scroll{
+  color: #C6957B;
+}
+.side-bar-left.scroll a{
+  color: #F784F4;
+}
+
+/*  */
+.side-bar-left.scroll .active a{
+  color: #979797;
+}
+
+
+
+
+/* side bar */
+
+
+.side-bar-left{
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.side-bar-left li{
+  height: 20% !important;
+  /* padding: 20px 0px; */
+  text-align: center;
+  /* border-bottom: 1px solid #c4bdba; */
+}
+
+.side-bar-left li a{
+  height: 16%;
+  /* font-family: 'PT Sans Narrow', sans-serif; */
+  color: #fff;
+  padding: 0px 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  height: 100px;
+  writing-mode:vertical-lr;
+}
+.side-bar-left  .active a{
+  width: 100%;
+  padding: 0px 7px;
+  /* animation: active-1 .1s 1s both; */
+  border-right: 4px solid orangered;
+   
+}
+/* .side-bar-left ul li{
+  animation: active-1 .1s 1s both;
+}
+
+@keyframes active-1{
+  0%{height: 100%; border-right: 4px solid orangered;height: 0px;}
+  50%{height: 100%;border-right: 4px solid orangered;height: 100px;}
+  100%{ height: 100%;border-right: 4px solid orangered;height: 100px;}
+} */
+
+.active{
+  /* border-right: 2px solid orangered; */
+  transition: border-width 0.4s linear;
+}
+.navbar-style{
+  display: none;
+}
+
+
+
+
+/* home page */
+/* .homepage{
+  display: flex;
+  width: 100%;
+} */
+.homepage .left-side{
+  float: left;
+ width: 3%;
+ position: fixed;
+ z-index: 1;
+}
+.homepage .all-carusals{
+  margin-left: 0px;
+  float: right;
+width: 97%;
+}
+.navbar-style .nav-tab{
+  color: #000;
+}
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  .navbar-style {
+    display: block;
+  }
+  .side-bar-left{
+    display: none;
+  }
+  .homepage .left-side{
+    width: 100%;
+  }
+  .homepage .all-carusals{
+    width: 100%;
+    height: auto;
+  }
+  .logo-heading{
+    display: none;
+  }
+  .all-carusals{
+    margin-top: 50px;
+  }
+  .botom-white{
+    display: block !important;
+  }
+  .botom-dark{
+    display: block !important;
+  }
+  .award-wining-left h2{
+    font-size: 40px !important;
+  }
+  .award-wining-left {
+    height: 56vh !important;
+  }
+}
+
+
+/* Magzine left */
+.magzine_left{
+  margin-top: 30px;
+}
+
+.logo-heading{
+  font-family: 'Paris Pro';
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 25px;
+}
+.magzine .img-text h2{
+  /* font-family: 'Paris Pro'; */
+  font-size: 35px;
+  color: #C6957B;
+  font-weight: 800;
+}
+.magzine .img-text h4{
+  /* font-family: 'Paris Pro'; */
+  font-size: 25px;
+  color: #B5A088;
+  font-weight: 700;
+}
+.magzine .img-text p{
+  font-family: 'Paris Pro';
+  color: #000;
+}
+.magzine_left{
+  width: 100%;
+  height: 80vh;
+  background: url("./assests/magzine.PNG");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+/* About */
+.about-section .about-text h2{
+  color: #F784F4;
+  font-size: 25px;
+}
+
+.about-section .about-text h2 span{
+  color: #CACCC8;
+}
+
+
+/* Contact Us */
+.contact-left-side{
+  /* padding: 120px; */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1A212C;
+}
+.contact-left-side h4{
+  color: #fafafa;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.contact-left-side p{
+  color: #C9AE96;
+  font-size: 20px;
+}
+
+.contact-left-side .contact-info p{
+  font-size: 15px;
+}
+
+.contact-left-side .contact-input input{
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-radius: 0px !important;
+  outline: none;
+}
+.contact-left-side hr{
+  margin-left: 7rem;
+    float: right;
+    width: 90%;
+    margin: 0px;
+    border: 0;
+    border-top: 2px solid rgb(196,169,148);
+}
+.contact-left-side .btn-1{
+  margin-top: 15px;
+  background: rgb(196,169,148);
+  border: none;
+  color: #000;
+  font-size: 20px;
+  text-align: right;
+}
+
+.text-right-side{
+  /* background: #f0f0f0; */
+  margin-top: 100px;
+  margin-left: 70px;
+}
+.text-right-side h2{
+  font-size: 17px;
+  font-weight: 800;
+}
+.text-right-side h3{
+  font-weight: 300 !important;
+  font-size: 40px;
+}
+
+/* home 2 */
+.home_2{
+  background: url("../src/assests/HOME\ PAGE\ \ NEW\ 4\ \ 2020.jpg");
+  width: 100%;
+  background-size:cover;
+  min-height: 105vh;
+}
+
+.home_2 .award-wining-left{
+  width: 100%;
+  height: 60vh;
+  background: transparent;
+}
+
+.home_2 .award-wining-left h2{
+  color: #C6957B;
+  font-size: 30px;
+}
+
+.home_2 .award-wining-left h2 span{
+  color: #fff;
+}
+
+.home_2 .award-wining-right{
+  width: 100%;
+  height: 64vh;
+  background: #fafafa;
+}
+
+.awrd-text p{
+  font-size: 13px;
+  color: #979797;
+}
+.awrd-text .home-2{
+  color: #000 !important;
+  font-weight: 300;
+}
+
+.get-in{
+  width: 100%;
+  height: 100px;
+  background: #C6957B;
+  display: grid;
+  place-content: center;
+}
+
+/* Project Sabon */
+
+.sabon-style{
+  background: #fafafa;
+}
+.sabon-style h2{
+  font-size: 20px;
+}
+.sabon-style p{
+  font-size: 15px;
+}
+
+
+
+/* specility */
+.specialy-component{
+  min-height: 100vh;
+  position: relative;
+}
+.dark-mode{
+  background: #1D1C20;
+}
+.specialy-component{
+  display: grid;
+  place-content: center;
+}
+.botom-white{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 70% 0px 0px 0px;
+  background: #1D1C20;
+  display: none;
+}
+.botom-dark{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 70% 0px 0px 0px;
+  background: #fff;
+  display: none;
+}
+
+
+/* mobile navbar */
+.navbar-style{
+  background: #241D21;
+}
+.navbar-light .navbar-toggler{
+  color: #fff !important;
+}
+.navbar-style .nav-tab-1{
+  color:'#fff';
+  font-size:'30px';
+  text-transform:'uppercase';
+  letter-spacing:'1px';
+  margin:'10px 0px';
+}
